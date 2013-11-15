@@ -1,0 +1,3 @@
+pat_maquette_homepage:
+    path:  /maquette
+    defaults: { _controller: PaTMaquetteBundle:Maquette:index }
