@@ -87,24 +87,78 @@ class __TwigTemplate_a9490d83e86695ee5bc846c2bc230f72f6ac471f7025c476f54849e00ac
             <li><a href=\"#\">Contact</a></li>
           </ul>
           <ul class=\"nav navbar-nav navbar-right\">
-            <li><button type=\"button\" class=\"btn btn-success btn-connect\">Connect</button></li>
+            <li><button type=\"button\" class=\"btn btn-success btn-connect\" data-toggle=\"modal\" data-target=\"#ModalConnect\">Log In</button></li>
           </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
     </div><!-- /.navbar -->
 
+      <!-- Modal -->
+    <div class=\"modal fade\" id=\"ModalConnect\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ModalConnectLabel\" aria-hidden=\"true\">
+      <div class=\"modal-dialog\">
+        <div class=\"modal-content\">
+          <div>
+            <ul class=\"nav nav-tabs\" id=\"myTab\">
+              <li class=\"active tab-login\"><a href=\"#connection\" data-toggle=\"tab\">Log In</a></li>
+              <li class=\"tab-signin\"><a href=\"#registration\" data-toggle=\"tab\">Sign Up</a></li>
+            </ul>
+          </div>
+          <div class=\"modal-body\">
+            <div class=\"tab-content\">
+              <div class=\"tab-pane fade in active\" id=\"connection\">
+                <div class=\"form-group\">
+                  <label for=\"exampleInputEmail1\">Email address</label>
+                  <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" placeholder=\"Enter email\">
+                </div>
+                <div class=\"form-group\">
+                  <label for=\"exampleInputPassword1\">Password</label>
+                  <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\" placeholder=\"Password\">
+                </div>
+              </div>
+              <div class=\"tab-pane fade\" id=\"registration\">
+                <div class=\"form-group\">
+                  <label for=\"exampleInputPseudo1\">Pseudo</label>
+                  <input type=\"text\" class=\"form-control\" id=\"exampleInputPseudo1\" placeholder=\"Enter Pseudo\">
+                </div>
+                <div class=\"form-group\">
+                  <label for=\"exampleInputPassword2\">Password</label>
+                  <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword2\" placeholder=\"Password\">
+                </div>
+                <div class=\"form-group\">
+                  <label for=\"exampleInputPassword3\">Password again</label>
+                  <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword3\" placeholder=\"Password\">
+                </div>
+                <div class=\"form-group\">
+                  <label for=\"exampleInputEmail2\">Email address</label>
+                  <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail2\" placeholder=\"Enter email\">
+                </div>
+                <div class=\"form-group\">
+                  <label for=\"exampleInputCountry1\">Country</label>
+                  <input type=\"text\" class=\"form-control\" id=\"exampleInputCountry1\" placeholder=\"Your Country\">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=\"modal-footer\">
+            <button type=\"button\" class=\"btn btn-danger btn-close-connection\" data-dismiss=\"modal\">Close</button>
+            <button type=\"button\" class=\"btn btn-success\">Sign In</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
 
       ";
-        // line 58
+        // line 112
         $this->displayBlock('body', $context, $blocks);
-        // line 60
+        // line 114
         echo "
 
 
   ";
-        // line 63
+        // line 117
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 70
+        // line 124
         echo "
   </body>
 </html>";
@@ -130,30 +184,30 @@ class __TwigTemplate_a9490d83e86695ee5bc846c2bc230f72f6ac471f7025c476f54849e00ac
     ";
     }
 
-    // line 58
+    // line 112
     public function block_body($context, array $blocks = array())
     {
-        // line 59
+        // line 113
         echo "      ";
     }
 
-    // line 63
+    // line 117
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 64
+        // line 118
         echo "    ";
-        // line 65
+        // line 119
         echo "    <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 66
+        // line 120
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/bootstrap.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 67
+        // line 121
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/fosjsrouting/js/router.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 68
+        // line 122
         echo $this->env->getExtension('routing')->getPath("fos_js_routing_js", array("callback" => "fos.Router.setData"));
         echo "\"></script>
   ";
@@ -171,6 +225,6 @@ class __TwigTemplate_a9490d83e86695ee5bc846c2bc230f72f6ac471f7025c476f54849e00ac
 
     public function getDebugInfo()
     {
-        return array (  157 => 68,  153 => 67,  149 => 66,  146 => 65,  144 => 64,  141 => 63,  137 => 59,  134 => 58,  128 => 24,  123 => 23,  120 => 22,  114 => 20,  108 => 70,  106 => 63,  101 => 60,  99 => 58,  82 => 44,  78 => 43,  73 => 41,  66 => 37,  53 => 26,  51 => 22,  46 => 20,  41 => 18,  23 => 2,);
+        return array (  211 => 122,  207 => 121,  203 => 120,  200 => 119,  198 => 118,  195 => 117,  191 => 113,  188 => 112,  182 => 24,  177 => 23,  174 => 22,  168 => 20,  162 => 124,  160 => 117,  155 => 114,  153 => 112,  82 => 44,  78 => 43,  73 => 41,  66 => 37,  53 => 26,  51 => 22,  46 => 20,  41 => 18,  23 => 2,);
     }
 }

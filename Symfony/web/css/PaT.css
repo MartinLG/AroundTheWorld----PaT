@@ -15,9 +15,18 @@ body {
 	margin-top: 8px;
 }
 
+.btn-close-connection{
+	float: left;
+}
 
+.modal-body{
+	text-align: left;
+}
 
-
+.tab-login, .tab-signin{
+	font-size: 20px;
+	width: 50%;
+}
 
 
 
