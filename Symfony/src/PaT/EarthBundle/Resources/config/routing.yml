@@ -1,0 +1,3 @@
+Earth:
+    pattern:  /earth
+    defaults: { _controller: PaTEarthBundle:Earth:earth }

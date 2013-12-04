@@ -18,6 +18,8 @@
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
       <parameter key="PaTMaquetteBundle">PaT\MaquetteBundle\PaTMaquetteBundle</parameter>
       <parameter key="FOSJsRoutingBundle">FOS\JsRoutingBundle\FOSJsRoutingBundle</parameter>
+      <parameter key="PaTMapBundle">PaT\MapBundle\PaTMapBundle</parameter>
+      <parameter key="PaTEarthBundle">PaT\EarthBundle\PaTEarthBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
       <parameter key="SensioGeneratorBundle">Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle</parameter>
@@ -2313,6 +2315,8 @@
         <argument key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</argument>
         <argument key="PaTMaquetteBundle">PaT\MaquetteBundle\PaTMaquetteBundle</argument>
         <argument key="FOSJsRoutingBundle">FOS\JsRoutingBundle\FOSJsRoutingBundle</argument>
+        <argument key="PaTMapBundle">PaT\MapBundle\PaTMapBundle</argument>
+        <argument key="PaTEarthBundle">PaT\EarthBundle\PaTEarthBundle</argument>
         <argument key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</argument>
         <argument key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</argument>
         <argument key="SensioGeneratorBundle">Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle</argument>
@@ -2658,6 +2662,14 @@
       <call method="addPath">
         <argument>C:\Users\Martin\Documents\GitHub\AroundTheWorld----PaT\Symfony\src\PaT\MaquetteBundle/Resources/views</argument>
         <argument>PaTMaquette</argument>
+      </call>
+      <call method="addPath">
+        <argument>C:\Users\Martin\Documents\GitHub\AroundTheWorld----PaT\Symfony\src\PaT\MapBundle/Resources/views</argument>
+        <argument>PaTMap</argument>
+      </call>
+      <call method="addPath">
+        <argument>C:\Users\Martin\Documents\GitHub\AroundTheWorld----PaT\Symfony\src\PaT\EarthBundle/Resources/views</argument>
+        <argument>PaTEarth</argument>
       </call>
       <call method="addPath">
         <argument>C:\Users\Martin\Documents\GitHub\AroundTheWorld----PaT\Symfony\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle/Resources/views</argument>

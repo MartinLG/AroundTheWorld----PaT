@@ -1235,7 +1235,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getFosJsRouting_ExtractorService()
     {
-        return $this->services['fos_js_routing.extractor'] = new \FOS\JsRoutingBundle\Extractor\ExposedRoutesExtractor($this->get('router'), array(), 'C:/Users/Martin/Documents/GitHub/AroundTheWorld----PaT/Symfony/app/cache/dev', array('FrameworkBundle' => 'Symfony\\Bundle\\FrameworkBundle\\FrameworkBundle', 'SecurityBundle' => 'Symfony\\Bundle\\SecurityBundle\\SecurityBundle', 'TwigBundle' => 'Symfony\\Bundle\\TwigBundle\\TwigBundle', 'MonologBundle' => 'Symfony\\Bundle\\MonologBundle\\MonologBundle', 'SwiftmailerBundle' => 'Symfony\\Bundle\\SwiftmailerBundle\\SwiftmailerBundle', 'AsseticBundle' => 'Symfony\\Bundle\\AsseticBundle\\AsseticBundle', 'DoctrineBundle' => 'Doctrine\\Bundle\\DoctrineBundle\\DoctrineBundle', 'SensioFrameworkExtraBundle' => 'Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle', 'PaTMaquetteBundle' => 'PaT\\MaquetteBundle\\PaTMaquetteBundle', 'FOSJsRoutingBundle' => 'FOS\\JsRoutingBundle\\FOSJsRoutingBundle', 'WebProfilerBundle' => 'Symfony\\Bundle\\WebProfilerBundle\\WebProfilerBundle', 'SensioDistributionBundle' => 'Sensio\\Bundle\\DistributionBundle\\SensioDistributionBundle', 'SensioGeneratorBundle' => 'Sensio\\Bundle\\GeneratorBundle\\SensioGeneratorBundle'));
+        return $this->services['fos_js_routing.extractor'] = new \FOS\JsRoutingBundle\Extractor\ExposedRoutesExtractor($this->get('router'), array(), 'C:/Users/Martin/Documents/GitHub/AroundTheWorld----PaT/Symfony/app/cache/dev', array('FrameworkBundle' => 'Symfony\\Bundle\\FrameworkBundle\\FrameworkBundle', 'SecurityBundle' => 'Symfony\\Bundle\\SecurityBundle\\SecurityBundle', 'TwigBundle' => 'Symfony\\Bundle\\TwigBundle\\TwigBundle', 'MonologBundle' => 'Symfony\\Bundle\\MonologBundle\\MonologBundle', 'SwiftmailerBundle' => 'Symfony\\Bundle\\SwiftmailerBundle\\SwiftmailerBundle', 'AsseticBundle' => 'Symfony\\Bundle\\AsseticBundle\\AsseticBundle', 'DoctrineBundle' => 'Doctrine\\Bundle\\DoctrineBundle\\DoctrineBundle', 'SensioFrameworkExtraBundle' => 'Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle', 'PaTMaquetteBundle' => 'PaT\\MaquetteBundle\\PaTMaquetteBundle', 'FOSJsRoutingBundle' => 'FOS\\JsRoutingBundle\\FOSJsRoutingBundle', 'PaTMapBundle' => 'PaT\\MapBundle\\PaTMapBundle', 'PaTEarthBundle' => 'PaT\\EarthBundle\\PaTEarthBundle', 'WebProfilerBundle' => 'Symfony\\Bundle\\WebProfilerBundle\\WebProfilerBundle', 'SensioDistributionBundle' => 'Sensio\\Bundle\\DistributionBundle\\SensioDistributionBundle', 'SensioGeneratorBundle' => 'Sensio\\Bundle\\GeneratorBundle\\SensioGeneratorBundle'));
     }
 
     /**
@@ -2887,6 +2887,8 @@ class appDevDebugProjectContainer extends Container
         $instance->addPath('C:\\Users\\Martin\\Documents\\GitHub\\AroundTheWorld----PaT\\Symfony\\vendor\\symfony\\swiftmailer-bundle\\Symfony\\Bundle\\SwiftmailerBundle/Resources/views', 'Swiftmailer');
         $instance->addPath('C:\\Users\\Martin\\Documents\\GitHub\\AroundTheWorld----PaT\\Symfony\\vendor\\doctrine\\doctrine-bundle\\Doctrine\\Bundle\\DoctrineBundle/Resources/views', 'Doctrine');
         $instance->addPath('C:\\Users\\Martin\\Documents\\GitHub\\AroundTheWorld----PaT\\Symfony\\src\\PaT\\MaquetteBundle/Resources/views', 'PaTMaquette');
+        $instance->addPath('C:\\Users\\Martin\\Documents\\GitHub\\AroundTheWorld----PaT\\Symfony\\src\\PaT\\MapBundle/Resources/views', 'PaTMap');
+        $instance->addPath('C:\\Users\\Martin\\Documents\\GitHub\\AroundTheWorld----PaT\\Symfony\\src\\PaT\\EarthBundle/Resources/views', 'PaTEarth');
         $instance->addPath('C:\\Users\\Martin\\Documents\\GitHub\\AroundTheWorld----PaT\\Symfony\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\WebProfilerBundle/Resources/views', 'WebProfiler');
         $instance->addPath('C:\\Users\\Martin\\Documents\\GitHub\\AroundTheWorld----PaT\\Symfony\\vendor\\sensio\\distribution-bundle\\Sensio\\Bundle\\DistributionBundle/Resources/views', 'SensioDistribution');
         $instance->addPath('C:/Users/Martin/Documents/GitHub/AroundTheWorld----PaT/Symfony/app/Resources/views');
@@ -3321,6 +3323,8 @@ class appDevDebugProjectContainer extends Container
                 'SensioFrameworkExtraBundle' => 'Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle',
                 'PaTMaquetteBundle' => 'PaT\\MaquetteBundle\\PaTMaquetteBundle',
                 'FOSJsRoutingBundle' => 'FOS\\JsRoutingBundle\\FOSJsRoutingBundle',
+                'PaTMapBundle' => 'PaT\\MapBundle\\PaTMapBundle',
+                'PaTEarthBundle' => 'PaT\\EarthBundle\\PaTEarthBundle',
                 'WebProfilerBundle' => 'Symfony\\Bundle\\WebProfilerBundle\\WebProfilerBundle',
                 'SensioDistributionBundle' => 'Sensio\\Bundle\\DistributionBundle\\SensioDistributionBundle',
                 'SensioGeneratorBundle' => 'Sensio\\Bundle\\GeneratorBundle\\SensioGeneratorBundle',

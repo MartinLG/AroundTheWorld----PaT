@@ -1,0 +1,33 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+  Earth - {{ parent() }}
+{% endblock %}
+
+{% block body %}
+	<div id="map3d" style="height: 100%; margin=0px; padding=0px;"></div>
+{% endblock %}
+
+{% block javascripts %}
+	</script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script>
+var ge;
+
+google.load("earth", "1", {"other_params":"sensor=false"});4
+
+function init() {
+  google.earth.createInstance('map3d', initCB, failureCB);
+}
+
+function initCB(instance) {
+   ge = instance;
+   ge.getWindow().setVisibility(true);
+}
+
+function failureCB(errorCode) {
+}
+
+google.setOnLoadCallback(init);
+    </script>
+{% endblock %}

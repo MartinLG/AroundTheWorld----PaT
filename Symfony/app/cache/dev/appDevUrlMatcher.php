@@ -133,9 +133,22 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // pat_maquette_homepage
-        if ($pathinfo === '/maquette') {
-            return array (  '_controller' => 'PaT\\MaquetteBundle\\Controller\\MaquetteController::indexAction',  '_route' => 'pat_maquette_homepage',);
+        // Earth
+        if ($pathinfo === '/earth') {
+            return array (  '_controller' => 'PaT\\EarthBundle\\Controller\\EarthController::earthAction',  '_route' => 'Earth',);
+        }
+
+        if (0 === strpos($pathinfo, '/ma')) {
+            // Map
+            if ($pathinfo === '/map') {
+                return array (  '_controller' => 'PaT\\MapBundle\\Controller\\MapController::mapAction',  '_route' => 'Map',);
+            }
+
+            // Home
+            if ($pathinfo === '/maquette') {
+                return array (  '_controller' => 'PaT\\MaquetteBundle\\Controller\\MaquetteController::indexAction',  '_route' => 'Home',);
+            }
+
         }
 
         // fos_js_routing_js

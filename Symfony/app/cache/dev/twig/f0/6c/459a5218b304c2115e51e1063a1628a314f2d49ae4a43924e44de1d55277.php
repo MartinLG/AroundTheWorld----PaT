@@ -40,26 +40,21 @@ class __TwigTemplate_f06c459a5218b304c2115e51e1063a1628a314f2d49ae4a43924e44de1d
     public function block_body($context, array $blocks = array())
     {
         // line 8
-        echo "
-  ";
-        // line 10
-        echo "  <h1 class=\"Thewelcome\">Welcome in the world :)</h1>
-
-  <hr>
+        echo "    <div class=\"container main-page\">
 
   ";
-        // line 15
+        // line 11
         echo "  ";
         $this->displayBlock('PaT_body', $context, $blocks);
-        // line 17
-        echo "
+        // line 13
+        echo "    </div>
 ";
     }
 
-    // line 15
+    // line 11
     public function block_PaT_body($context, array $blocks = array())
     {
-        // line 16
+        // line 12
         echo "  ";
     }
 
@@ -75,6 +70,6 @@ class __TwigTemplate_f06c459a5218b304c2115e51e1063a1628a314f2d49ae4a43924e44de1d
 
     public function getDebugInfo()
     {
-        return array (  63 => 16,  60 => 15,  52 => 15,  46 => 10,  79 => 29,  73 => 25,  70 => 24,  55 => 17,  51 => 11,  47 => 10,  43 => 8,  40 => 7,  33 => 4,  30 => 3,);
+        return array (  58 => 12,  55 => 11,  50 => 13,  47 => 11,  43 => 8,  40 => 7,  33 => 4,  30 => 3,);
     }
 }

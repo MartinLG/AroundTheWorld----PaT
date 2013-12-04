@@ -39,7 +39,10 @@ class __TwigTemplate_f005b29e70d4f04963313cdebf87ded305e2ede9f2caf7c9745d15c292f
     public function block_PaT_body($context, array $blocks = array())
     {
         // line 8
-        echo "
+        echo "  <h1 class=\"Thewelcome\">Welcome in the world :)</h1>
+
+  <hr>
+
   <div id=\"carousel-example-generic\" class=\"carousel slide\" data-ride=\"carousel\">
     <!-- Indicators -->
     <ol class=\"carousel-indicators\">
@@ -54,7 +57,7 @@ class __TwigTemplate_f005b29e70d4f04963313cdebf87ded305e2ede9f2caf7c9745d15c292f
     <div class=\"carousel-inner\">
       <div class=\"item active\">
         <img src=\"";
-        // line 22
+        // line 25
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/sanfrancisco.jpg"), "html", null, true);
         echo "\" alt=\"First Travel\">
         <div class=\"carousel-caption\">
@@ -64,7 +67,7 @@ class __TwigTemplate_f005b29e70d4f04963313cdebf87ded305e2ede9f2caf7c9745d15c292f
       </div>
       <div class=\"item\">
         <img src=\"";
-        // line 29
+        // line 32
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/inde.jpg"), "html", null, true);
         echo "\" alt=\"Second Travel\">
         <div class=\"carousel-caption\">
@@ -74,7 +77,7 @@ class __TwigTemplate_f005b29e70d4f04963313cdebf87ded305e2ede9f2caf7c9745d15c292f
       </div>
       <div class=\"item\">
         <img src=\"";
-        // line 36
+        // line 39
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/japon.jpeg"), "html", null, true);
         echo "\" alt=\"Third Travel\">
         <div class=\"carousel-caption\">
@@ -84,7 +87,7 @@ class __TwigTemplate_f005b29e70d4f04963313cdebf87ded305e2ede9f2caf7c9745d15c292f
       </div>
       <div class=\"item\">
         <img src=\"";
-        // line 43
+        // line 46
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/pologne.jpg"), "html", null, true);
         echo "\" alt=\"Fourth Travel\">
         <div class=\"carousel-caption\">
@@ -94,7 +97,7 @@ class __TwigTemplate_f005b29e70d4f04963313cdebf87ded305e2ede9f2caf7c9745d15c292f
       </div>
       <div class=\"item\">
         <img src=\"";
-        // line 50
+        // line 53
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/berlin.jpg"), "html", null, true);
         echo "\" alt=\"Fifth Travel\">
         <div class=\"carousel-caption\">
@@ -105,12 +108,12 @@ class __TwigTemplate_f005b29e70d4f04963313cdebf87ded305e2ede9f2caf7c9745d15c292f
     </div>
 
     <!-- Controls -->
-    <a class=\"left carousel-control\" href=\"#Carousel\" data-slide=\"prev\">
-      <span class=\"glyphicon glyphicon-chevron-left\"></span>
-    </a>
-    <a class=\"right carousel-control\" href=\"#Carousel\" data-slide=\"next\">
-      <span class=\"glyphicon glyphicon-chevron-right\"></span>
-    </a>
+  <a class=\"left carousel-control\" href=\"#carousel-example-generic\" data-slide=\"prev\">
+    <span class=\"glyphicon glyphicon-chevron-left\"></span>
+  </a>
+  <a class=\"right carousel-control\" href=\"#carousel-example-generic\" data-slide=\"next\">
+    <span class=\"glyphicon glyphicon-chevron-right\"></span>
+  </a>
   </div>
 
 ";
@@ -128,6 +131,6 @@ class __TwigTemplate_f005b29e70d4f04963313cdebf87ded305e2ede9f2caf7c9745d15c292f
 
     public function getDebugInfo()
     {
-        return array (  98 => 50,  88 => 43,  78 => 36,  68 => 29,  58 => 22,  42 => 8,  39 => 7,  32 => 4,  29 => 3,);
+        return array (  101 => 53,  91 => 46,  81 => 39,  71 => 32,  61 => 25,  42 => 8,  39 => 7,  32 => 4,  29 => 3,);
     }
 }
