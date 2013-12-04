@@ -1,0 +1,14 @@
+pa_t_earth:
+    resource: "@PaTEarthBundle/Resources/config/routing.yml"
+    prefix:   /
+
+pa_t_map:
+    resource: "@PaTMapBundle/Resources/config/routing.yml"
+    prefix:   /
+
+pa_t_maquette:
+    resource: "@PaTMaquetteBundle/Resources/config/routing.yml"
+    prefix:   /
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
