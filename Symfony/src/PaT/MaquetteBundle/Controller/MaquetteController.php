@@ -10,4 +10,9 @@ class MaquetteController extends Controller
     {
         return $this->render('PaTMaquetteBundle:Maquette:index.html.twig');
     }
+
+    public function contactAction()
+    {
+        return $this->render('PaTMaquetteBundle:Maquette:contact.html.twig');
+    }
 }

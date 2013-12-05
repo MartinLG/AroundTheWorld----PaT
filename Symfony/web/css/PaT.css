@@ -28,8 +28,10 @@ body {
 	width: 50%;
 }
 
-
-
+.contact-fields{
+	font-size: 20px;
+	text-align: left;
+}
 
 /* Caroussel */
 
