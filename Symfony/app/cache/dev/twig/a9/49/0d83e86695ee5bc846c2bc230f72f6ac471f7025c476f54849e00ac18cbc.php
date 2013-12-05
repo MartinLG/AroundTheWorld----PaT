@@ -14,6 +14,7 @@ class __TwigTemplate_a9490d83e86695ee5bc846c2bc230f72f6ac471f7025c476f54849e00ac
             'stylesheets' => array($this, 'block_stylesheets'),
             'body' => array($this, 'block_body'),
             'javascripts' => array($this, 'block_javascripts'),
+            'javascripts_page' => array($this, 'block_javascripts_page'),
         );
     }
 
@@ -68,23 +69,23 @@ class __TwigTemplate_a9490d83e86695ee5bc846c2bc230f72f6ac471f7025c476f54849e00ac
         </div>
         <div class=\"collapse navbar-collapse\">
           <ul class=\"nav navbar-nav\">
-            <li class=\"active\"><a href=\"";
+            <li id=\"navHome\" class=\"active\"><a href=\"";
         // line 41
         echo $this->env->getExtension('routing')->getPath("Home");
         echo "\">Home</a></li>
-            <li><a href=\"#\">News</a></li>
-            <li><a href=\"";
+            <li id=\"navNews\"><a href=\"#\">News</a></li>
+            <li id=\"navMap\"><a href=\"";
         // line 43
         echo $this->env->getExtension('routing')->getPath("Map");
         echo "\">Map</a></li>
-            <li><a href=\"";
+            <li id=\"navEarth\"><a href=\"";
         // line 44
         echo $this->env->getExtension('routing')->getPath("Earth");
         echo "\">Earth</a></li>
-            <li><a href=\"#\">Countries</a></li>
-            <li><a href=\"#\">Best</a></li>
-            <li><a href=\"#\">My Account</a></li>
-            <li><a href=\"";
+            <li id=\"navCountries\"><a href=\"#\">Countries</a></li>
+            <li id=\"navBest\"><a href=\"#\">Best</a></li>
+            <li id=\"navAccount\"><a href=\"#\">My Account</a></li>
+            <li id=\"navAbout\"><a href=\"";
         // line 48
         echo $this->env->getExtension('routing')->getPath("Contact");
         echo "\">About</a></li>
@@ -161,7 +162,7 @@ class __TwigTemplate_a9490d83e86695ee5bc846c2bc230f72f6ac471f7025c476f54849e00ac
   ";
         // line 117
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 124
+        // line 127
         echo "
   </body>
 </html>";
@@ -205,15 +206,30 @@ class __TwigTemplate_a9490d83e86695ee5bc846c2bc230f72f6ac471f7025c476f54849e00ac
         // line 120
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/bootstrap.js"), "html", null, true);
         echo "\"></script>
-    <script src=\"";
+    <script type=\"text/javascript\" src=\"";
         // line 121
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/fosjsrouting/js/router.js"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/PaT.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
         // line 122
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/fosjsrouting/js/router.js"), "html", null, true);
+        echo "\"></script>
+    <script src=\"";
+        // line 123
         echo $this->env->getExtension('routing')->getPath("fos_js_routing_js", array("callback" => "fos.Router.setData"));
         echo "\"></script>
-  ";
+    ";
+        // line 124
+        $this->displayBlock('javascripts_page', $context, $blocks);
+        // line 126
+        echo "  ";
+    }
+
+    // line 124
+    public function block_javascripts_page($context, array $blocks = array())
+    {
+        // line 125
+        echo "    ";
     }
 
     public function getTemplateName()
@@ -228,6 +244,6 @@ class __TwigTemplate_a9490d83e86695ee5bc846c2bc230f72f6ac471f7025c476f54849e00ac
 
     public function getDebugInfo()
     {
-        return array (  214 => 122,  210 => 121,  206 => 120,  203 => 119,  201 => 118,  198 => 117,  194 => 113,  191 => 112,  185 => 24,  180 => 23,  177 => 22,  171 => 20,  165 => 124,  163 => 117,  158 => 114,  156 => 112,  89 => 48,  82 => 44,  78 => 43,  73 => 41,  66 => 37,  53 => 26,  51 => 22,  46 => 20,  41 => 18,  23 => 2,);
+        return array (  232 => 125,  229 => 124,  225 => 126,  223 => 124,  219 => 123,  215 => 122,  211 => 121,  207 => 120,  204 => 119,  202 => 118,  199 => 117,  195 => 113,  192 => 112,  186 => 24,  181 => 23,  178 => 22,  172 => 20,  166 => 127,  164 => 117,  159 => 114,  157 => 112,  90 => 48,  83 => 44,  79 => 43,  74 => 41,  67 => 37,  54 => 26,  52 => 22,  47 => 20,  42 => 18,  24 => 2,);
     }
 }

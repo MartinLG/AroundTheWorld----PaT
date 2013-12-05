@@ -113,6 +113,7 @@ class __TwigTemplate_6930b39c2a0370b21eaf50fd158f4a0eb2a5f646ae2ca101ade81ac8c12
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
+    <script type=\"text/javascript\">ChangeNavSel('navMap');</script>
 ";
     }
 

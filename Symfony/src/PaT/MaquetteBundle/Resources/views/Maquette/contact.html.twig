@@ -1,7 +1,7 @@
 {% extends "PaTMaquetteBundle::layout.html.twig" %}
 
 {% block title %}
-  Accueil - {{ parent() }}
+  About - {{ parent() }}
 {% endblock %}
 
 {% block PaT_body %}
@@ -65,4 +65,8 @@
 
     </div><!-- /.container -->
 
+{% endblock %}
+
+{% block javascripts_page %}
+	<script type="text/javascript">ChangeNavSel('navAbout');</script>
 {% endblock %}

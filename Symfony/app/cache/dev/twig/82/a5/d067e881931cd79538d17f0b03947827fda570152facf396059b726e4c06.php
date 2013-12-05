@@ -12,6 +12,7 @@ class __TwigTemplate_82a5d067e881931cd79538d17f0b03947827fda570152facf396059b726
         $this->blocks = array(
             'title' => array($this, 'block_title'),
             'PaT_body' => array($this, 'block_PaT_body'),
+            'javascripts_page' => array($this, 'block_javascripts_page'),
         );
     }
 
@@ -29,7 +30,7 @@ class __TwigTemplate_82a5d067e881931cd79538d17f0b03947827fda570152facf396059b726
     public function block_title($context, array $blocks = array())
     {
         // line 4
-        echo "  Accueil - ";
+        echo "  About - ";
         $this->displayParentBlock("title", $context, $blocks);
         echo "
 ";
@@ -111,6 +112,14 @@ class __TwigTemplate_82a5d067e881931cd79538d17f0b03947827fda570152facf396059b726
 ";
     }
 
+    // line 70
+    public function block_javascripts_page($context, array $blocks = array())
+    {
+        // line 71
+        echo "\t<!--<script type=\"text/javascript\">ChangeNavSel('navAbout');</script>-->
+";
+    }
+
     public function getTemplateName()
     {
         return "PaTMaquetteBundle:Maquette:contact.html.twig";
@@ -123,6 +132,6 @@ class __TwigTemplate_82a5d067e881931cd79538d17f0b03947827fda570152facf396059b726
 
     public function getDebugInfo()
     {
-        return array (  93 => 51,  69 => 30,  58 => 22,  42 => 8,  39 => 7,  32 => 4,  29 => 3,);
+        return array (  119 => 71,  116 => 70,  94 => 51,  70 => 30,  59 => 22,  43 => 8,  40 => 7,  33 => 4,  30 => 3,);
     }
 }

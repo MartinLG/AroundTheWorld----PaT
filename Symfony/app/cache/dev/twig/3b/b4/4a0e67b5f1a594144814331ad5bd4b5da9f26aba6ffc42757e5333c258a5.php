@@ -48,7 +48,9 @@ class __TwigTemplate_3bb44a0e67b5f1a594144814331ad5bd4b5da9f26aba6ffc42757e5333c
     public function block_javascripts($context, array $blocks = array())
     {
         // line 12
-        echo "\t</script>
+        echo "
+\t<script type=\"text/javascript\">ChangeNavSel('navEarth');</script>
+
 \t<script type=\"text/javascript\" src=\"https://www.google.com/jsapi\"></script>
     <script>
 var ge;
@@ -69,6 +71,7 @@ function failureCB(errorCode) {
 
 google.setOnLoadCallback(init);
     </script>
+
 ";
     }
 
