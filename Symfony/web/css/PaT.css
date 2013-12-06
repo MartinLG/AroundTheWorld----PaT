@@ -33,6 +33,12 @@ body {
 	text-align: left;
 }
 
+.nameUser{
+	margin-top: 11px;
+	margin-right: 10px;
+	font-size: 19px;
+}
+
 /* Caroussel */
 
 ul { 

@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new PaT\MapBundle\PaTMapBundle(),
             new PaT\EarthBundle\PaTEarthBundle(),
+            new PaT\UserBundle\PaTUserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

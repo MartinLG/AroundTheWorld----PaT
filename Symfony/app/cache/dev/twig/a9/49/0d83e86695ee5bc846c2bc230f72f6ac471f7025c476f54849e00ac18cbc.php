@@ -28,7 +28,7 @@ class __TwigTemplate_a9490d83e86695ee5bc846c2bc230f72f6ac471f7025c476f54849e00ac
     <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-    <meta name=\"description\" content=\"CV de Martin Le Guillou\">
+    <meta name=\"description\" content=\"Réseau social autour du voyage communautaire ! Venez partager et apprennez de l'experience des autres routards.\">
     <meta name=\"author\" content=\"Martin Le Guillou\">
 
     <style type=\"text/css\">
@@ -90,8 +90,19 @@ class __TwigTemplate_a9490d83e86695ee5bc846c2bc230f72f6ac471f7025c476f54849e00ac
         echo $this->env->getExtension('routing')->getPath("Contact");
         echo "\">About</a></li>
           </ul>
+          
           <ul class=\"nav navbar-nav navbar-right\">
-            <li><button type=\"button\" class=\"btn btn-success btn-connect\" data-toggle=\"modal\" data-target=\"#ModalConnect\">Log In</button></li>
+            ";
+        // line 52
+        if ($this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : null), "user", array(), "any", false, true), "username", array(), "any", true, true)) {
+            // line 53
+            echo "              <li class=\"nameUser\">Welcome ";
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user"), "username"), "html", null, true);
+            echo " !</li>
+            ";
+        }
+        // line 55
+        echo "            <li><button type=\"button\" class=\"btn btn-success btn-connect\" data-toggle=\"modal\" data-target=\"#ModalConnect\">Log In</button></li>
           </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
@@ -153,16 +164,16 @@ class __TwigTemplate_a9490d83e86695ee5bc846c2bc230f72f6ac471f7025c476f54849e00ac
 
 
       ";
-        // line 112
+        // line 116
         $this->displayBlock('body', $context, $blocks);
-        // line 114
+        // line 118
         echo "
 
 
   ";
-        // line 117
+        // line 121
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 127
+        // line 131
         echo "
   </body>
 </html>";
@@ -188,47 +199,47 @@ class __TwigTemplate_a9490d83e86695ee5bc846c2bc230f72f6ac471f7025c476f54849e00ac
     ";
     }
 
-    // line 112
+    // line 116
     public function block_body($context, array $blocks = array())
     {
-        // line 113
+        // line 117
         echo "      ";
     }
 
-    // line 117
+    // line 121
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 118
+        // line 122
         echo "    ";
-        // line 119
+        // line 123
         echo "    <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 120
+        // line 124
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/bootstrap.js"), "html", null, true);
         echo "\"></script>
     <script type=\"text/javascript\" src=\"";
-        // line 121
+        // line 125
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/PaT.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 122
+        // line 126
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/fosjsrouting/js/router.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 123
+        // line 127
         echo $this->env->getExtension('routing')->getPath("fos_js_routing_js", array("callback" => "fos.Router.setData"));
         echo "\"></script>
     ";
-        // line 124
+        // line 128
         $this->displayBlock('javascripts_page', $context, $blocks);
-        // line 126
+        // line 130
         echo "  ";
     }
 
-    // line 124
+    // line 128
     public function block_javascripts_page($context, array $blocks = array())
     {
-        // line 125
+        // line 129
         echo "    ";
     }
 
@@ -244,6 +255,6 @@ class __TwigTemplate_a9490d83e86695ee5bc846c2bc230f72f6ac471f7025c476f54849e00ac
 
     public function getDebugInfo()
     {
-        return array (  232 => 125,  229 => 124,  225 => 126,  223 => 124,  219 => 123,  215 => 122,  211 => 121,  207 => 120,  204 => 119,  202 => 118,  199 => 117,  195 => 113,  192 => 112,  186 => 24,  181 => 23,  178 => 22,  172 => 20,  166 => 127,  164 => 117,  159 => 114,  157 => 112,  90 => 48,  83 => 44,  79 => 43,  74 => 41,  67 => 37,  54 => 26,  52 => 22,  47 => 20,  42 => 18,  24 => 2,);
+        return array (  243 => 129,  240 => 128,  236 => 130,  234 => 128,  230 => 127,  226 => 126,  222 => 125,  218 => 124,  215 => 123,  213 => 122,  210 => 121,  206 => 117,  203 => 116,  197 => 24,  192 => 23,  189 => 22,  183 => 20,  177 => 131,  175 => 121,  170 => 118,  168 => 116,  105 => 55,  99 => 53,  97 => 52,  90 => 48,  83 => 44,  79 => 43,  74 => 41,  67 => 37,  54 => 26,  52 => 22,  47 => 20,  42 => 18,  24 => 2,);
     }
 }

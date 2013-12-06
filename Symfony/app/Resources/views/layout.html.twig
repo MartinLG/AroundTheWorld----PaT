@@ -47,7 +47,11 @@
             <li id="navAccount"><a href="#">My Account</a></li>
             <li id="navAbout"><a href="{{ path('Contact') }}">About</a></li>
           </ul>
+          
           <ul class="nav navbar-nav navbar-right">
+            {% if app.user.username is defined %}
+              <li class="nameUser">Welcome {{ app.user.username }} !</li>
+            {% endif %}
             <li><button type="button" class="btn btn-success btn-connect" data-toggle="modal" data-target="#ModalConnect">Log In</button></li>
           </ul>
         </div><!-- /.nav-collapse -->

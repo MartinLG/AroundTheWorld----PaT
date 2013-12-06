@@ -35,6 +35,9 @@ class appDevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
         'Home' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'PaT\\MaquetteBundle\\Controller\\MaquetteController::indexAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/maquette',    ),  ),  4 =>   array (  ),),
         'Contact' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'PaT\\MaquetteBundle\\Controller\\MaquetteController::contactAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/maquette/contact',    ),  ),  4 =>   array (  ),),
         'fos_js_routing_js' => array (  0 =>   array (    0 => '_format',  ),  1 =>   array (    '_controller' => 'fos_js_routing.controller:indexAction',    '_format' => 'js',  ),  2 =>   array (    '_format' => 'js|json',  ),  3 =>   array (    0 =>     array (      0 => 'variable',      1 => '.',      2 => 'js|json',      3 => '_format',    ),    1 =>     array (      0 => 'text',      1 => '/js/routing',    ),  ),  4 =>   array (  ),),
+        'login' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'PaT\\UserBundle\\Controller\\SecurityController::loginAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/login',    ),  ),  4 =>   array (  ),),
+        'login_check' => array (  0 =>   array (  ),  1 =>   array (  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/login_check',    ),  ),  4 =>   array (  ),),
+        'logout' => array (  0 =>   array (  ),  1 =>   array (  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/logout',    ),  ),  4 =>   array (  ),),
     );
 
     /**

@@ -30,7 +30,7 @@ class __TwigTemplate_f06c459a5218b304c2115e51e1063a1628a314f2d49ae4a43924e44de1d
     public function block_title($context, array $blocks = array())
     {
         // line 4
-        echo "  Blog - ";
+        echo "  ";
         $this->displayParentBlock("title", $context, $blocks);
         echo "
 ";
