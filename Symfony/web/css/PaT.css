@@ -39,6 +39,13 @@ body {
 	font-size: 19px;
 }
 
+.formuLog{
+	width: 500px;
+	text-align: left;
+	left: 50%;
+	margin: auto;
+}
+
 /* Caroussel */
 
 ul { 
