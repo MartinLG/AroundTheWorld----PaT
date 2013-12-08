@@ -5,3 +5,11 @@ Home:
 Contact:
     path:  /maquette/contact
     defaults: { _controller: PaTMaquetteBundle:Maquette:contact }
+
+Country:
+    path:  /country
+    defaults: { _controller: PaTMaquetteBundle:Maquette:country}
+
+CountryCheck:
+    path:  /countrycheck
+    defaults: { _controller: PaTMaquetteBundle:Maquette:countrycheck}
