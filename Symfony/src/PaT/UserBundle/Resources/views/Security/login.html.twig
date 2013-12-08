@@ -9,7 +9,7 @@
       <div class="alert alert-danger">Bad login or password !</div>
     {% endif %}
     <div class="formuLog" >
-      <form action="{{ path('login_check') }}" method="post">
+      <form action="{{ path('fos_user_security_check') }}" method="post">
         <div class="form-group">
           <label for="username">Login :</label>
           <input type="text" class="form-control" id="username" name="_username" />

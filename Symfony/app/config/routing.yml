@@ -17,12 +17,21 @@ pa_t_maquette:
 fos_js_routing:
     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
 
-login:
-    pattern:   /login
-    defaults:  { _controller: PaTUserBundle:Security:login }
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
 
-login_check:
-    pattern:   /login_check
+fos_user_profile:
+    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+    prefix: /profile
 
-logout:
-    pattern:   /logout
+fos_user_register:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix: /register
+
+fos_user_resetting:
+    resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
+    prefix: /resetting
+
+fos_user_change_password:
+    resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
+    prefix: /profile

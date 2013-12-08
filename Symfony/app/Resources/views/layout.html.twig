@@ -49,9 +49,9 @@
           </ul>
           
           <ul class="nav navbar-nav navbar-right">
-            {% if app.user.username is defined %}
+            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
               <li class="nameUser">Welcome {{ app.user.username }} !</li>
-              <li><button type="button" class="btn btn-danger btn-connect" onclick="self.location.href='{{ path('logout') }}'">Log Out</button></li>
+              <li><button type="button" class="btn btn-danger btn-connect" onclick="self.location.href='{{ path('fos_user_security_logout') }}'">Log Out</button></li>
             {% else %} 
               <li><button type="button" class="btn btn-success btn-connect" data-toggle="modal" data-target="#ModalConnect">Log In</button></li>
             {% endif %}
@@ -73,7 +73,7 @@
           <div class="modal-body">
             <div class="tab-content">
               <div class="tab-pane fade in active" id="connection">
-                <form action="{{ path('login_check') }}" method="post">
+                <form action="{{ path('fos_user_security_check') }}" method="post">
                   <div class="form-group">
                     <label for="username">Login :</label>
                     <input type="text" class="form-control" id="username" name="_username" />
